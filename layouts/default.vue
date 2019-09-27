@@ -1,38 +1,35 @@
 <template>
   <div id="main">
-    <vue-particles class="particles fullscreen" color="#3CB4C2" linesColor="#D4BA63" />
+    <no-ssr>
+      <vue-particles 
+        style="position: relative; z-index: 100"
+        color="#0FB0AA"
+        linesColor="#0FB0AA"
+        :particlesNumber="80"
+        shapeType="circle"
+        :hoverEffect="true"
+        hoverMode="grab" />
+    </no-ssr>
     <div class="main-menu fullscreen">
-      <a href="/" class="teko">busctel '20</a>
-      <a href="/">home</a>
-      <a href="/about">about</a>
-      <a href="/program">program</a>
-      <a href="/registration">registration</a>
-      <a href="/transportation">transportation</a>
-      <a href="/useful-links">useful links</a>
+      <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
+      <nuxt-link to="/">home</nuxt-link>
+      <nuxt-link to="/about">about</nuxt-link>
+      <nuxt-link to="/program">program</nuxt-link>
+      <nuxt-link to="/registration">registration</nuxt-link>
+      <nuxt-link to="/transportation">transportation</nuxt-link>
+      <nuxt-link to="/useful-links">useful links</nuxt-link>
     </div>
     <nuxt v-bar/>
   </div>
 </template>
-
 <script>
 export default {
+  name: 'Default'
 }
 </script>
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Dosis|Teko&display=swap&subset=latin-ext');
-
-  .fade-enter-active,
-  .fade-leave-active {
-    transition-property: opacity;
-    transition-timing-function: ease-in-out;
-    transition-duration: 500ms;
-  }
-  .fade-enter,
-  .fade-leave-to {
-    opacity: 0;
-  }
-
   .teko {
     font-family: 'Teko', sans-serif;
     font-size: 22px;
@@ -49,17 +46,12 @@ export default {
   html {
     font-family: 'Dosis', sans-serif;
     overflow: hidden;
+    background-image: linear-gradient(to bottom, #fff6ed, #F1EAD8)
   }
 
   ::-webkit-scrollbar {
     display: none;
   }
-
-  .particles {
-    z-index: -1000;
-    opacity: .75;
-  }
-
 
   .links {
     padding-top: 15px;
@@ -108,7 +100,6 @@ export default {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-image: linear-gradient(180deg, white, transparent);
     z-index: 100;
 
     a {

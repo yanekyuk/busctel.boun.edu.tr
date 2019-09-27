@@ -11,7 +11,7 @@ export default {
    */
   ...routerBase,
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'BUSCTEL',
     meta: [{
         charset: 'utf-8'
       },
@@ -22,14 +22,21 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Official website of BUSCTEL'
       }
+    ],
+    script: [
+      { src: 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js' }
     ],
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
-    }]
+    },{
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Dosis|Teko&display=swap&subset=latin-ext'
+    }
+  ]
   },
   /*
    ** Customize the progress-bar color
@@ -44,7 +51,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/vue-particles', ssr: false }, '~/plugins/vuebar'],
+  plugins: [
+    { src: '~/plugins/vue-particles', ssr: false },
+    '~/plugins/vuebar'
+  ],
   /*
    ** Nuxt.js dev-modules
    */

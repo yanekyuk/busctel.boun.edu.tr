@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0",
+    "particles.js": "^2.0.0",
     "vue-particles": "^1.0.9",
     "vuebar": "0.0.20"
   },
