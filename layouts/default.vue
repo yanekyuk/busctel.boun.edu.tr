@@ -2,7 +2,7 @@
   <div id="main">
     <no-ssr>
       <vue-particles 
-        style="position: relative; z-index: 100"
+        style="position: absolute; z-index: 100; width: 100%; height: 100%"
         color="#0FB0AA"
         linesColor="#0FB0AA"
         :particlesNumber="80"
@@ -10,7 +10,7 @@
         :hoverEffect="true"
         hoverMode="grab" />
     </no-ssr>
-    <div class="main-menu fullscreen">
+    <div class="main-menu">
       <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
       <nuxt-link to="/">home</nuxt-link>
       <nuxt-link to="/about">about</nuxt-link>
@@ -35,6 +35,15 @@ export default {
     font-size: 22px;
   }
 
+  #main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .__nuxt-error-page {
+    display: none;
+  }
+
   .fullscreen {
     position: fixed;
     top: 0;
@@ -46,6 +55,9 @@ export default {
   html {
     font-family: 'Dosis', sans-serif;
     overflow: hidden;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
     background-image: linear-gradient(to bottom, #fff6ed, #F1EAD8)
   }
 
@@ -59,15 +71,17 @@ export default {
 
   .container {
     margin: 0 auto;
-    position: fixed !important;
-    // height: 100vh;
+    position: absolute !important;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 50;
+    z-index: 150;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: auto;
+    height: auto;
+    top: 0; bottom: 0;
   }
 
   .title {
@@ -100,7 +114,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: 60px;
-    z-index: 100;
+    z-index: 200;
 
     a {
       padding: 15px 30px;
@@ -117,12 +131,11 @@ export default {
     }
   }
 
-
-
   .vb>.vb-dragger {
     z-index: 5;
     width: 12px;
-    right: 0
+    position: fixed!important;
+    right: 0;
   }
 
   .vb>.vb-dragger>.vb-dragger-styler {
