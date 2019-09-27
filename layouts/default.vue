@@ -82,6 +82,7 @@ export default {
     width: auto;
     height: auto;
     top: 0; bottom: 0;
+    scrollbar-width: none;
   }
 
   .title {
