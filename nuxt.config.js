@@ -34,7 +34,7 @@ export default {
       href: '/favicon.ico'
     },{
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Dosis|Teko&display=swap&subset=latin-ext'
+      href: 'https://fonts.googleapis.com/css?family=Dosis|Inconsolata|Teko&display=swap&subset=latin-ext'
     }
   ]
   },
@@ -53,7 +53,8 @@ export default {
    */
   plugins: [
     { src: '~/plugins/vue-particles', ssr: false },
-    '~/plugins/vuebar'
+    '~/plugins/vuebar',
+    '~/plugins/fontawesome'
   ],
   /*
    ** Nuxt.js dev-modules
@@ -63,7 +64,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
   /*
    ** Build configuration

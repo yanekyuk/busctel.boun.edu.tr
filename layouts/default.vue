@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import url('https://fonts.googleapis.com/css?family=Dosis|Teko&display=swap&subset=latin-ext');
+  @import url('https://fonts.googleapis.com/css?family=Dosis|Inconsolata|Teko&display=swap&subset=latin-ext');
   .teko {
     font-family: 'Teko', sans-serif;
     font-size: 22px;

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="page">
       <h1 class="title">
-        BUSCTEL
+        TRANSPORTATION
       </h1>
       <h2 class="subtitle">
         Boğaziçi University
