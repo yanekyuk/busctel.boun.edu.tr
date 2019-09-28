@@ -132,6 +132,10 @@ export default {
     }
   }
 
+  .vb-content {
+    scrollbar-width: none;
+  }
+
   .vb>.vb-dragger {
     z-index: 5;
     width: 12px;
