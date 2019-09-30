@@ -37,6 +37,7 @@
           </div>
         </div>
       </div>
+      <hr class="footer">
     </div>
   </div>
 </template>

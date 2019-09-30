@@ -81,8 +81,14 @@ export default {
     padding-bottom: 60px;
     width: auto;
     height: auto;
-    top: 0; bottom: 0;
+    top: 0; bottom: -60px;
     scrollbar-width: none;
+  }
+
+  .footer {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: none;
   }
 
   .title {

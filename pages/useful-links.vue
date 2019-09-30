@@ -10,6 +10,7 @@
       <h3 class="subtitle">
         Student Conference on Theoretical & Experimental Linguistics
       </h3>
+      <hr class="footer">
     </div>
   </div>
 </template>

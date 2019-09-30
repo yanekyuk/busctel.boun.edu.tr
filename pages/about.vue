@@ -15,6 +15,7 @@
           The BLC Committee is glad to announce BUSCTEL '19, in which students from graduate and undergraduate levels will present their work and posters, will be held on February 15-16, 2019.
         </p>
       </div>
+      <hr class="footer">
     </div>
   </div>
 </template>
