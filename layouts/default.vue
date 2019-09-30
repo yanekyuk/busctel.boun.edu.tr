@@ -17,7 +17,6 @@
       <nuxt-link to="/program">program</nuxt-link>
       <nuxt-link to="/registration">registration</nuxt-link>
       <nuxt-link to="/transportation">transportation</nuxt-link>
-      <nuxt-link to="/useful-links">useful links</nuxt-link>
     </div>
     <nuxt v-bar/>
   </div>
@@ -35,10 +34,6 @@ export default {
     font-size: 22px;
   }
 
-  #main {
-    display: flex;
-    justify-content: center;
-  }
 
   .__nuxt-error-page {
     display: none;
@@ -67,6 +62,11 @@ export default {
 
   .links {
     padding-top: 15px;
+  }
+
+  #main {
+    display: flex;
+    justify-content: center;
   }
 
   .container {
