@@ -7,7 +7,7 @@
       <div class="content">
         <div class="block" v-for="(program, i) in programs" :key="i">
           <table>
-            <caption>{{ program.date }}</caption>
+            <h3>{{ program.date }}</h3>
             <tr>
               <th>Time</th>
               <th>Title</th>
@@ -15,12 +15,12 @@
               <th>Location</th>
               <th>Chair</th>
             </tr>
-            <tr v-for="(item, i) in program.schedule" :key="i">
-              <td class="time">{{ item.time }}</td>
-              <td>{{ item.title }}</td>
-              <td>{{ item.speaker }}</td>
-              <td>{{ item.location }}</td>
-              <td>{{ item.chair }}</td>
+            <tr v-for="(item, j) in program.schedule" :key="j">
+              <td :class="!item.time && programs ? 'blank' : ''" class="time">{{ item.time }}</td>
+              <td :class="!item.title && programs ? 'blank' : ''">{{ item.title }}</td>
+              <td :class="!item.speaker && programs ? 'blank' : ''">{{ item.speaker }}</td>
+              <td :class="!item.location && programs ? 'blank' : ''">{{ item.location }}</td>
+              <td :class="!item.chair && programs ? 'blank' : ''">{{ item.chair }}</td>
             </tr>
           </table>
         </div>
@@ -138,8 +138,13 @@
           }
           td {
             border: 1px solid rgba(255,255,255,0.25);
+            padding: 3px;
+            &.blank {
+              background: rgba(255,255,255,0.25);
+            }
             &.time {
               white-space: nowrap;
+              padding: 0 5px;
             }
           }
         }
