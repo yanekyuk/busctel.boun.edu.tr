@@ -105,6 +105,26 @@ export default {
   align-items: center;
 }
 
+.card {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  & > div {
+    margin: 2.5px 5px;
+    border: 1px solid #424242;
+    padding: 5px;
+    &.card-time {
+      background: #424242;
+      color: white;
+    }
+  }
+  svg {
+    min-width: 16px;
+    max-width: 16px;
+  }
+}
+
 .card-time a {
   color: white;
   text-decoration: none;
