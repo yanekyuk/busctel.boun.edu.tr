@@ -1,6 +1,6 @@
 <template>
   <div id="main">
-    <no-ssr>
+    <client-only>
       <vue-particles 
         style="position: absolute; z-index: 100; width: 100%; height: 100%"
         color="#0FB0AA"
@@ -9,7 +9,7 @@
         shapeType="circle"
         :hoverEffect="true"
         hoverMode="grab" />
-    </no-ssr>
+    </client-only>
     <div class="main-menu">
       <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
       <nuxt-link class="main-menu-item" to="/">home</nuxt-link>
@@ -24,7 +24,13 @@
 </template>
 <script>
 export default {
-  name: 'Default'
+  name: 'Default',
+  mounted () {
+    const menuwidth = document.getElementsByClassName('main-menu')[0].offsetWidth
+    const gradient = document.getElementsByClassName('main-menu-gradient')[0]
+    gradient.setAttribute("style", `width: ${menuwidth}px`)
+    // console.log(document.getElementsByClassName('main-menu-gradient')[0].style.width)
+  }
 }
 </script>
 
@@ -164,10 +170,10 @@ export default {
 
   .main-menu-gradient {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
     height: 120px;
     z-index: 190;
-    background: linear-gradient(to bottom, #F1EAD8 60%, transparent 100%);
+    background: linear-gradient(to bottom, #FEF5EC 0%, #FDF4EB 60%, rgba(253, 244, 235, 0) 100%);
   }
 
   .vb-content {
