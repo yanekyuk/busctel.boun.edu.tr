@@ -12,12 +12,13 @@
     </no-ssr>
     <div class="main-menu">
       <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
-      <nuxt-link to="/">home</nuxt-link>
-      <nuxt-link to="/about">about</nuxt-link>
-      <nuxt-link to="/program">program</nuxt-link>
-      <nuxt-link to="/registration">registration</nuxt-link>
-      <nuxt-link to="/transportation">transportation</nuxt-link>
+      <nuxt-link class="main-menu-item" to="/">home</nuxt-link>
+      <nuxt-link class="main-menu-item" to="/about">about</nuxt-link>
+      <nuxt-link class="main-menu-item" to="/program">program</nuxt-link>
+      <nuxt-link class="main-menu-item" to="/registration">registration</nuxt-link>
+      <nuxt-link class="main-menu-item" to="/transportation">transportation</nuxt-link>
     </div>
+    <div class="main-menu-gradient" />
     <nuxt v-bar/>
   </div>
 </template>
@@ -53,7 +54,10 @@ export default {
     position: fixed;
     top: 0; bottom: 0;
     left: 0; right: 0;
-    background-image: linear-gradient(to bottom, #fff6ed, #F1EAD8)
+    background-image: linear-gradient(to bottom, #fff6ed, #F1EAD8);
+    body {
+      margin: 0;
+    }
   }
 
   ::-webkit-scrollbar {
@@ -119,23 +123,51 @@ export default {
   .main-menu {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 60px;
     z-index: 200;
-
-    a {
-      padding: 15px 30px;
+    .teko {
+      padding: 15px 30px 10px;
       text-decoration: none;
       font-weight: bold;
       color: #212121;
       text-transform: uppercase;
       transition: all ease-in-out .3s;
-
+      border-top: 0px solid #212121;
+      font-family: 'Teko', sans-serif;
+      font-size: 22px;
+    }
+    .main-menu-item {
+      padding: 15px 5px 10px;
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #212121;
+      text-transform: uppercase;
+      transition: all ease-in-out .3s;
+      border-top: 0px solid #212121;
       &:hover {
-        background: #424242;
-        color: white;
+        padding-top: 0;
+        border-top: 15px solid #212121;
+      }
+      &.nuxt-link-exact-active {
+        padding-bottom: 0px;
+        border-bottom: 5px solid #212121;
+        margin-bottom: 25px;
+        &:hover {
+          padding-top: 15px;
+          border-top: 0px solid #212121;
+        }
       }
     }
+  }
+
+  .main-menu-gradient {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 120px;
+    z-index: 190;
+    background: linear-gradient(to bottom, #F1EAD8 60%, transparent 100%);
   }
 
   .vb-content {
