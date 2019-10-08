@@ -4,7 +4,8 @@
       <h1 class="title">
         TENTATIVE PROGRAM & ABSTRACTS
       </h1>
-      <div class="content">
+      <h3 class="subtitle">To be announced in January 12.</h3>
+      <!-- <div class="content">
         <div class="block" v-for="(program, i) in programs" :key="i">
           <table>
             <h3>{{ program.date }}</h3>
@@ -24,7 +25,7 @@
             </tr>
           </table>
         </div>
-      </div>
+      </div> -->
       <hr class="footer">
     </div>
   </div>
