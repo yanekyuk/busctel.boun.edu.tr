@@ -8,7 +8,7 @@
       </span>
       <iframe class="form" id="registration-form" @load="frameload()"
         src="https://docs.google.com/forms/d/e/1FAIpQLSeeSm-6DO70GmeLieHxLTGdI4zeSClw0AeeJM59PpdZJVN0YQ/viewform?embedded=true"
-        width="768" height="1280" frameborder="0" marginheight="0" marginwidth="0">
+        height="1280" frameborder="0" marginheight="0" marginwidth="0">
       </iframe>
       <!-- <iframe class="form" id="registration-form" @load="frameload()"
         src="https://docs.google.com/forms/d/e/1FAIpQLSf09EYcN_oQ0ForoDg7-gRTcfjAWTDO7Qo9xxD1mL33bBFiyw/viewform?embedded=true"
@@ -50,8 +50,8 @@
 
   .form {
     height: 100%;
-    min-height: 1024px;
-    min-width: 100vh;
+    min-height: 1280px;
+    padding: 0 -2em;
     margin-top: 60px;
     margin-bottom: 30px;
   }

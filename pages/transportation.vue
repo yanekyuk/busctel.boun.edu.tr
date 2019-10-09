@@ -2,7 +2,7 @@
   <div class="container">
     <div class="page transportation">
       <div class="map-frame" />
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12029.16218974347!2d29.050697!3d41.084498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac9ff47fbad73%3A0xbd6495985c46cd0e!2zQm_En2F6acOnaSBVbml2ZXJzaXR5!5e0!3m2!1sen!2sus!4v1569849834545!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12029.16218974347!2d29.050697!3d41.084498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac9ff47fbad73%3A0xbd6495985c46cd0e!2zQm_En2F6acOnaSBVbml2ZXJzaXR5!5e0!3m2!1sen!2sus!4v1569849834545!5m2!1sen!2sus" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <div class="transportation-list">
           <div class="transportation-list-item">
             <div class="card">

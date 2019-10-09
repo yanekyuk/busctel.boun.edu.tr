@@ -10,27 +10,63 @@
         :hoverEffect="true"
         hoverMode="grab" />
     </client-only>
-    <div class="main-menu">
+    <div class="main-menu" v-if="!mobile">
       <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
-      <nuxt-link class="main-menu-item" to="/">home</nuxt-link>
-      <nuxt-link class="main-menu-item" to="/about">about</nuxt-link>
-      <nuxt-link class="main-menu-item" to="/callforpapers">call for papers</nuxt-link>
-      <nuxt-link class="main-menu-item" to="/program">program</nuxt-link>
-      <nuxt-link class="main-menu-item" to="/registration">registration</nuxt-link>
-      <nuxt-link class="main-menu-item" to="/transportation">transportation</nuxt-link>
+      <nuxt-link v-for="(item, i) in menuItems" :key="i" class="main-menu-item" :to="item.slug">{{ item.title }}</nuxt-link>
+    </div>
+    <div class="main-menu mobile" v-if="mobile">
+      <div v-if="mobileMenu" class="menu">
+        <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
+        <nuxt-link v-for="(item, i) in menuItems" :key="i" class="main-menu-item" :to="item.slug">{{ item.title }}</nuxt-link>
+      </div>
+      <div v-else class="menu-button">
+        <nuxt-link to="/menu">
+          <font-awesome-icon icon="bars" />        
+        </nuxt-link>
+      </div>
     </div>
     <div class="main-menu-gradient" />
-    <nuxt v-bar/>
+    <nuxt v-bar :style="mobileMenu ? 'filter:blur(5px)' : ''"/>
   </div>
 </template>
 <script>
 export default {
   name: 'Default',
+  data () {
+    return {
+      mobile: false,
+      menuItems: [
+        { title: 'home', slug: '/' },
+        { title: 'about', slug: '/about' },
+        { title: 'call for papers', slug: '/callforpapers' },
+        { title: 'program', slug: '/program' },
+        { title: 'registration', slug: '/registration' },
+        { title: 'transportation', slug: '/transportation' },
+      ]
+    }
+  },
+  computed: {
+    mobileMenu: function () {
+      return this.$route.path === '/menu'
+    }
+  },
+  beforeDestroy () {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.isMobile, { passive: true })
+    }
+  },
   mounted () {
+    this.isMobile()
+    window.addEventListener('resize', this.isMobile, { passive: true })
     const menuwidth = document.getElementsByClassName('main-menu')[0].offsetWidth
     const gradient = document.getElementsByClassName('main-menu-gradient')[0]
     gradient.setAttribute("style", `width: ${menuwidth}px`)
     // console.log(document.getElementsByClassName('main-menu-gradient')[0].style.width)
+  },
+  methods: {
+    isMobile () {
+      this.mobile = window.innerWidth < 1024
+    }
   }
 }
 </script>
@@ -64,6 +100,12 @@ export default {
     background-image: linear-gradient(to bottom, #fff6ed, #F1EAD8);
     body {
       margin: 0;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg,#fff6ed,#f1ead8);
     }
   }
 
@@ -78,6 +120,10 @@ export default {
   #main {
     display: flex;
     justify-content: center;
+  }
+
+  .page {
+    padding: 0 2em!important;
   }
 
   .container {
@@ -106,7 +152,7 @@ export default {
     font-family: 'Teko', sans-serif;
     display: block;
     font-weight: 300;
-    font-size: 100px;
+    font-size: 5em;
     color: #35495e;
     letter-spacing: 1px;
   }
@@ -165,6 +211,40 @@ export default {
           padding-top: 15px;
           border-top: 0px solid #212121;
         }
+      }
+    }
+    &.mobile {
+      .menu {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        background: rgba(42,42,42,.25);
+        .main-menu-item {
+          margin: 15px 0;
+          border-top: none;
+          border-left: 0px solid #212121;
+          border-right: 0px solid #212121;
+          padding-left: 15px;
+          padding-right: 15px;
+          &:hover {
+            border-top: none;
+            padding-top: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-left: 10px solid #212121;
+            border-right: 10px solid #212121;
+          }
+        }
+      }
+      .menu-button {
+        position: fixed;
+        top: 1em;
+        left: 1em;
       }
     }
   }
