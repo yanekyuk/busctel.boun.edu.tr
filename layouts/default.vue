@@ -80,7 +80,7 @@ export default {
 
 
   .__nuxt-error-page {
-    display: none;
+    display: none!important;
   }
 
   .fullscreen {
@@ -219,6 +219,7 @@ export default {
       }
     }
     &.mobile {
+      position: fixed;
       width: 100vw;
       display: flex;
       justify-content: center;
