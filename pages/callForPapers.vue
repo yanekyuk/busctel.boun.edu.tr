@@ -8,11 +8,11 @@
         <p>
           Submissions are open for 30 minute talks (20 minute talk + 10 minutes for discussion) and posters.
           <br><br>
-          Deadline for Submission: December 1, 2019 <br>
-          Notificaion of Acceptance: December 22, 2019 <br>
-          Publication of provisional program: January 12, 2020 <br>
+          <strong>Deadline for Submission</strong> December 1, 2019 <br>
+          <strong>Notification of Acceptance</strong> December 22, 2019 <br>
+          <strong>Publication of provisional program</strong> January 12, 2020 <br>
           <br><br>
-          Abstract guidelines: <br>
+          <strong>Abstract guidelines</strong> <br>
           All graduate and undergraduate students are welcome to sent their submissions via 
           <a href="https://easychair.org/my/conference?conf=busctel20" target="_blank">https://easychair.org/my/conference?conf=busctel20</a>
           <br><br>

@@ -14,6 +14,7 @@
       <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
       <nuxt-link class="main-menu-item" to="/">home</nuxt-link>
       <nuxt-link class="main-menu-item" to="/about">about</nuxt-link>
+      <nuxt-link class="main-menu-item" to="/callforpapers">call for papers</nuxt-link>
       <nuxt-link class="main-menu-item" to="/program">program</nuxt-link>
       <nuxt-link class="main-menu-item" to="/registration">registration</nuxt-link>
       <nuxt-link class="main-menu-item" to="/transportation">transportation</nuxt-link>

@@ -50,7 +50,8 @@
 
   .form {
     height: 100%;
-    min-height: 1280px;
+    min-height: 1024px;
+    min-width: 100vh;
     margin-top: 60px;
     margin-bottom: 30px;
   }
