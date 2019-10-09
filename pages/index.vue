@@ -8,7 +8,7 @@
         Boğaziçi University Student Conference on Theoretical & Experimental Linguistics
       </h3>
       <h2 class="subtitle" style="font-weight: bold;">
-        Abstract submission deadline 1st December 2019
+        Abstract submission deadline December 1, 2019
       </h2>
       <div class="content">
         <p>
