@@ -16,7 +16,6 @@
     </div>
     <div class="main-menu mobile" v-if="mobile">
       <div v-if="mobileMenu" class="menu">
-        <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
         <nuxt-link v-for="(item, i) in menuItems" :key="i" class="main-menu-item" :to="item.slug">{{ item.title }}</nuxt-link>
       </div>
       <div v-else class="menu-button">
@@ -24,6 +23,7 @@
           <font-awesome-icon icon="bars" />        
         </nuxt-link>
       </div>
+      <nuxt-link to="/" class="teko">busctel '20</nuxt-link>
     </div>
     <div class="main-menu-gradient" />
     <nuxt v-bar :style="mobileMenu ? 'filter:blur(5px)' : ''"/>
@@ -107,6 +107,11 @@ export default {
       right: 0;
       background: linear-gradient(180deg,#fff6ed,#f1ead8);
     }
+  }
+
+  a {
+    color: #212121;
+    font-weight: bold;
   }
 
   ::-webkit-scrollbar {
@@ -214,12 +219,18 @@ export default {
       }
     }
     &.mobile {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .menu {
         position: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        top: 0;
+        left: 0;
         width: 100vw;
         height: 100vh;
         align-items: center;

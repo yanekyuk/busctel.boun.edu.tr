@@ -51,9 +51,10 @@
   .form {
     height: 100%;
     min-height: 1280px;
-    padding: 0 -2em;
     margin-top: 60px;
     margin-bottom: 30px;
+    width: 600px;
+    max-width: 100vw;
   }
 
   .form-loading {
