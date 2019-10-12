@@ -32,6 +32,10 @@
 <script>
 export default {
   name: 'Default',
+  metaInfo: {
+    title: 'BUSCTEL',
+    titleTemplate: '%S | BUSCTEL'
+  },
   data () {
     return {
       mobile: false,
@@ -77,7 +81,6 @@ export default {
     font-family: 'Teko', sans-serif;
     font-size: 22px;
   }
-
 
   .__nuxt-error-page {
     display: none!important;

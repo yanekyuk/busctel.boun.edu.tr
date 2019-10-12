@@ -88,6 +88,8 @@ export default {
   padding: 15px;
   background: white;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+  width: 600px;
+  max-width: 100vw;
 }
 .map-frame {
   border-top-left-radius: 6px;
