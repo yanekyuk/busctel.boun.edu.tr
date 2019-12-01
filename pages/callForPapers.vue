@@ -8,7 +8,7 @@
         <p>
           Submissions are open for 30 minute talks (20 minute talk + 10 minutes for discussion) and posters.
           <br><br>
-          <strong>Deadline for Submission</strong> December 1, 2019 <br>
+          <strong>Deadline for Submission</strong> <s style="opacity:.5">December 1, 2019</s> December 8, 2019<br>
           <strong>Notification of Acceptance</strong> December 22, 2019 <br>
           <strong>Publication of provisional program</strong> January 12, 2020 <br>
           <br><br>

@@ -27,6 +27,7 @@
     </div>
     <div class="main-menu-gradient" />
     <nuxt v-bar :style="mobileMenu ? 'filter:blur(5px)' : ''"/>
+    <!-- <div class="credits">Yankı Ekin Yüksel</div> -->
   </div>
 </template>
 <script>
@@ -262,6 +263,14 @@ export default {
         left: 1em;
       }
     }
+  }
+
+  .credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .5em;
+    font-size: 10px;
   }
 
   .main-menu-gradient {
