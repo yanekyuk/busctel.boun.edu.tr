@@ -8,7 +8,10 @@
         Boğaziçi University Student Conference on Theoretical & Experimental Linguistics
       </h3>
       <h2 class="subtitle" style="font-weight: bold;">
-        Abstract submission deadline December 1, 2019
+        Abstract submission deadline <s style="opacity: .5">December 1, 2019</s>
+      </h2>
+      <h2 class="subtitle">
+        Extended to <strong style="font-weight:bold">December 8, 2019</strong>
       </h2>
       <div class="content">
         <p>
@@ -36,6 +39,9 @@
 </template>
 
 <style lang="scss">
+.subtitle {
+  margin: 0;
+}
 .page-enter-active,
 .page-leave-active {
   transition-property: opacity;
