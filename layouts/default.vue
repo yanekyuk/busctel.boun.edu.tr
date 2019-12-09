@@ -1,5 +1,8 @@
 <template>
   <div id="main">
+    <!-- Matomo Image Tracker-->
+    <img src="https://analytics.elifinhecesi.org/matomo.php?idsite=3&amp;rec=1" style="border:0" alt="" />
+    <!-- End Matomo -->
     <client-only>
       <vue-particles 
         style="position: absolute; z-index: 100; width: 100%; height: 100%"
