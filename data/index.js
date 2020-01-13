@@ -1,45 +1,50 @@
 export default {
   programs: [
     {
-      date: 'February 15',
+      date: 'February 22',
+      location: 'Natuk Birkan Building, South Campus, Boğaziçi University, Bebek, 34342',
       schedule: [
-        { time: '09:00', title: 'Registration', location: 'Demir Demirgil Auditorium' },
-        { time: '09:45', title: 'Welcome, Announcements, and Opening Remarks', location: 'Demir Demirgil Auditorium' },
-        { time: '10:00', title: 'Invited Talk', location: 'Demir Demirgil Auditorium', speaker: 'Nilüfer Şener (İstanbul Kültür University)', chair: 'Noyan Dokudan'},
+        { time: '09:00', title: 'Registration' },
+        { time: '09:45', title: 'Welcome, Announcements, and Opening Remarks' },
+        { time: '10:00', title: 'Invited Talk', speaker: 'Dr. Nilhan Ketrez', chair: 'TBA'},
         { time: '11:00', title: 'Break' },
-        { time: '11:15-12:45', title: 'First Sessions', chair: 'Zeynep Burak', location: 'Demir Demirgil Auditorium' },
-        { time: '11:15', title: 'Effects of L2-English on first L1 Narrative Skills', speaker: 'Işıl Doğan, Orhan Ilhan, Nurgül Arslan, Ayşe Doğan, Ezgi Sarıdaş, Aslı Aktan' },
-        { time: '11:45', title: 'Information Structure in Turkish Nominal Phrases', speaker: 'Özlem Ergelen' },
-        { time: '12:15', title: 'Assessing and Comparing Verbal Fluency in Turkish Sign Language and Turkish', speaker: 'Onur Keleş' },
-        { time: '12:45', title: 'Lunch' },
-        { time: '13:45', title: 'Poster Session', location: 'Özge Arnas Hall' },
-        { time: '15:00', title: 'TID/Turkish Sign Language Workshop', location: 'Demir Demirgil Auditorium', speaker: 'Elvan Tamyürek Özparlak, Burcu Saral, Noyan Dokudan' },
-        { time: '17:00-18:00', title: 'Second Sessions', chair: 'Yiğit Kasal', location: 'Demir Demirgil Auditorium' },
-        { time: '17:00', title: 'Veya and Ya Da: Marking the distinction between the inclusive and exclusive disjunctive "or" in Turkish language', speaker: 'Kağan Yasin Porsuk, Tilbe Göksun' },
-        { time: '17:30', title: 'On Nominalizers in Turkish Embedded Clauses', speaker: 'Mehmet İlteriş Bozkurt' },
-        { time: '18:00', title: 'Boğaziçi University Music Club Classical Music Choir Concert', location: 'Demir Demirgil Auditorium' }
+        { time: '11:15-12:45', title: 'First Session', chair: 'TBA' },
+        { time: '11:15', title: 'Explicit and implicit measures of language dominance in Turkish-English bilinguals', speaker: 'Ilaria Porru, Michael Stern, and Gita Martohardjono' },
+        { time: '11:45', title: 'The Buffer Consonant and the Dative Case Marker in Compounds in Turkish', speaker: 'Merve Yazar' },
+        { time: '12:15', title: 'Two distribution patterns for -mIş in Cypriot Turkish', speaker: 'Christos Nikolaou' },
+        { time: '12:45', title: 'Lunch Break' },
+        { time: '13:30', title: 'Poster Session' },
+        { time: '15:00', title: 'Workshop on Designing a Minimal Linguistics Experiment with IbexFarm' },
+        { time: '15:30', title: 'Break' },
+        { time: '17:00-18:00', title: 'Second Session', chair: 'TBA' },
+        { time: '17:00', title: 'Swarm-alternations as degree constructions: experimental evidence', speaker: 'Lucia Vlášková' },
+        { time: '17:30', title: '(A)symmetrical superiority in Russian multiple wh-questions: quantitative study', speaker: 'Kseniia Studenikina' }
       ]
     },
     {
-      date: 'February 16',
+      date: 'February 23',
+      location: 'Natuk Birkan Building, South Campus, Boğaziçi University, Bebek, 34342',
       schedule: [
-        { time: '09:00', title: 'Registration', location: 'Demir Demirgil Auditorium' },
-        { time: '09:45', title: 'Welcome, Announcements, and Opening Remarks', location: 'Demir Demirgil Auditorium' },
-        { time: '10:00', title: 'Invited Talk', location: 'Demir Demirgil Auditorium', speaker: 'Serkan Şener (Yeditepe University)', chair: 'Demet Kayabaşı'},
+        { time: '10:00', title: 'Invited Talk', speaker: 'Dr. Öğr. Üyesi Emrah Görgülü'},
         { time: '11:00', title: 'Break' },
-        { time: '11:15-12:45', title: 'First Sessions', chair: 'Furkan Atmaca', location: 'Demir Demirgil Auditorium' },
-        { time: '11:15', title: 'The (non)effects of the age of acquisition of TİD: Evidence from classifiers and argument expressions ', speaker: 'Hande Sevgi' },
-        { time: '11:45', title: 'Contribution of grammatical function and semantic role to discourse prominence: Evidence from language comprehension and language production in Turkish', speaker: 'Gökben Konuk' },
-        { time: '12:15', title: 'Kazakh Es-Words are Strict Negative Concord Items', speaker: 'Assem Amirzhanova, Elena Guerzoni' },
-        { time: '12:45', title: 'Lunch' },
-        { time: '13:45', title: 'Flash Presentations and Discussions', location: 'Özge Arnas Hall' },
-        { time: '15:00-16:30', title: 'Second Sessions', chair: 'Gökçe Güneyi', location: 'Demir Demirgil Auditorium' },
-        { time: '15:00', title: 'Is Accusative Case Really the Case?', speaker: 'Utku Türk' },
-        { time: '15:30', title: 'L2 Comprehension in bilinguals after translating into L1 and L2', speaker: 'Ecenur Çağırıcı' },
-        { time: '16:00', title: 'Closing Remarks', location: 'Demir Demirgil Auditorium' },
-        { time: '19:00', title: 'Social Get-Together' },
-
+        { time: '11:15-12:45', title: 'First Session', chair: 'TBA' },
+        { time: '11:15', title: 'Islıksı bir dil olan Kuş Dili', speaker: 'Kenan Akten' },
+        { time: '11:45', title: 'Türkçe Anadili konuşurlarının Türkçe Hece Yapılarına İlişkin Farkındalıklarının Belirlenmesi', speaker: 'Onurcan Cengizhan, Melike Sönmez' },
+        { time: '12:15', title: 'Lunch' }, 
+        { time: '13:30', title: 'Workshop on Aggregating Experiment Data in R' },
+        { time: '15:30-17:00', title: 'Second Session', chair: 'TBA' },
+        { time: '15:30', title: 'An Investigation of morphosyntactic case interference and prosodic phrase lengths in Turkish center-embeddings', speaker: 'Özge Bakay' },
+        { time: '16:00', title: 'A Proposition for Typology of Modality Markers in Sign Languages', speaker: 'Maharrem Ayar' },
+        { time: '16:30', title: 'Turkish speakers\' processing of English Reflexives: An eye-tracking study', speaker: 'Münir Özturhan' },
+        { time: '17:00', title: 'Closing Remarks' },
+        { time: '19:00', title: 'Social Get-Together' }
       ]
     }          
+  ],
+  posters: [
+    { title: 'Zero Morphemes in Turkish Relative Clauses', speaker: 'Süleyman Yaman', aff: 'Middle East Technical University' },
+    { title: 'Referential strategies of personal pronouns in learner English', speaker: 'Yoshikatsu Hasegawa, Yujisuhu Shuhama', aff: 'Keiwa University' },
+    { title: 'kendi-DAT in Batman Turkish', speaker: 'Behiye İrem Tapan', aff: 'Marmara Üniversitesi' },
+    { title: 'Manual Construction of Hypernym Relations in Turkish WordNet KeNet', speaker: 'Elif Sarmış, Özge Bakay, Bilge Nas Arıcan, Olcay Taner Yıldız', aff: 'Boğaziçi University, Starlang Software, Işık University' },
   ]
 }

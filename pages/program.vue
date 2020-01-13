@@ -4,28 +4,49 @@
       <h1 class="title">
         TENTATIVE PROGRAM & ABSTRACTS
       </h1>
-      <h3 class="subtitle">To be announced in January 12.</h3>
-      <!-- <div class="content">
+      <h3 class="subtitle">PDF version of the program can be retrieved from <a href="/program.pdf" target="_blank">here</a>.</h3>
+      <div class="content">
         <div class="block" v-for="(program, i) in programs" :key="i">
-          <table>
+          <div class="date-and-location">
             <h3>{{ program.date }}</h3>
+            <span>Venue: <strong>{{ program.location }}</strong></span>
+          </div>
+          <table>
             <tr>
               <th>Time</th>
               <th>Title</th>
               <th>Speaker</th>
-              <th>Location</th>
-              <th>Chair</th>
+              <!-- <th>Location</th> -->
+              <!-- <th>Chair</th> -->
             </tr>
             <tr v-for="(item, j) in program.schedule" :key="j">
               <td :class="!item.time && programs ? 'blank' : ''" class="time">{{ item.time }}</td>
               <td :class="!item.title && programs ? 'blank' : ''">{{ item.title }}</td>
               <td :class="!item.speaker && programs ? 'blank' : ''">{{ item.speaker }}</td>
-              <td :class="!item.location && programs ? 'blank' : ''">{{ item.location }}</td>
-              <td :class="!item.chair && programs ? 'blank' : ''">{{ item.chair }}</td>
+              <!-- <td :class="!item.location && programs ? 'blank' : ''">{{ item.location }}</td> -->
+              <!-- <td :class="!item.chair && programs ? 'blank' : ''">{{ item.chair }}</td> -->
             </tr>
           </table>
         </div>
-      </div> -->
+        <div class="block">
+          <div class="date-and-location">
+            <h3>Posters</h3>
+            <span>Venue: <strong>Natuk Birkan Building, South Campus, Boğaziçi University, Bebek, 34342</strong></span>
+          </div>
+          <table>
+            <tr>
+              <th>Title</th>
+              <th>Presentator</th>
+              <th>Affiliation</th>
+            </tr>
+            <tr v-for="(poster, j) in posters" :key="j">
+              <td :class="!poster.title && posters ? 'blank' : ''">{{ poster.title }}</td>
+              <td :class="!poster.speaker && posters ? 'blank' : ''">{{ poster.speaker }}</td>
+              <td :class="!poster.aff && posters ? 'blank' : ''">{{ poster.aff }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <hr class="footer">
     </div>
   </div>
@@ -37,7 +58,8 @@
     name: 'Program',
     data() {
       return {
-        programs: data.programs
+        programs: data.programs,
+        posters: data.posters
       }
     },
     // mounted () {
@@ -58,6 +80,16 @@
         .program-list {
           text-align: left;
           list-style-type: none;
+        }
+        .date-and-location {
+          display: flex;
+          margin: -5px 0rem;
+          background: rgba(21,21,21,.75);
+          color: white;
+          span, h3 {
+            margin: 2rem 1rem 5px;
+            flex-grow: 1;
+          }
         }
         table {
           background: rgba(21,21,21,.75);

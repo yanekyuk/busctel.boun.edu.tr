@@ -169,7 +169,7 @@ export default {
     letter-spacing: 1px;
   }
 
-  .subtitle {
+  .subtitle, .subtitle > a {
     font-weight: 300;
     color: #526488;
     word-spacing: 5px;

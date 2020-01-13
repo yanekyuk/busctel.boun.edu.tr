@@ -13,13 +13,16 @@
           Abstract submission deadline <s style="opacity: .5">December 1, 2019</s>
         </h2>
         <h2 class="subtitle">
-          Extended to <strong style="font-weight:bold">December 8, 2019</strong>
+          Extended to <s style="opacity: .5">December 8, 2019</s>
         </h2>
       </small>
 
       </small>
       <h2 class="subtitle" style="font-weight: bold">
         Deadline of abstract submission is over
+      </h2>
+      <h2 class="subtitle" style="font-weight: bold">
+        <nuxt-link to="/program">Program is now on!</nuxt-link>
       </h2>
       <div class="content">
         <p>
