@@ -6,7 +6,7 @@ export default {
       schedule: [
         { time: '09:00', title: 'Registration' },
         { time: '09:45', title: 'Welcome, Announcements, and Opening Remarks' },
-        { time: '10:00', title: 'Invited Talk', speaker: 'Dr. Nilhan Ketrez', chair: 'TBA'},
+        { time: '10:00', title: 'How children cope with morphology: The view from the early experiments', speaker: 'Nihan Ketrez', chair: 'TBA'},
         { time: '11:00', title: 'Break' },
         { time: '11:15-12:45', title: 'First Session', chair: 'TBA' },
         { time: '11:15', title: 'Explicit and implicit measures of language dominance in Turkish-English bilinguals', speaker: 'Ilaria Porru, Michael Stern, and Gita Martohardjono' },
@@ -15,7 +15,7 @@ export default {
         { time: '12:45', title: 'Lunch Break' },
         { time: '13:30', title: 'Poster Session' },
         { time: '15:00', title: 'Workshop on Designing a Minimal Linguistics Experiment with IbexFarm' },
-        { time: '15:30', title: 'Break' },
+        // { time: '15:30', title: 'Break' },
         { time: '17:00-18:00', title: 'Second Session', chair: 'TBA' },
         { time: '17:00', title: 'Swarm-alternations as degree constructions: experimental evidence', speaker: 'Lucia Vlášková' },
         { time: '17:30', title: '(A)symmetrical superiority in Russian multiple wh-questions: quantitative study', speaker: 'Kseniia Studenikina' }
@@ -25,7 +25,7 @@ export default {
       date: 'February 23',
       location: 'Natuk Birkan Building, South Campus, Boğaziçi University, Bebek, 34342',
       schedule: [
-        { time: '10:00', title: 'Invited Talk', speaker: 'Dr. Öğr. Üyesi Emrah Görgülü'},
+        { time: '10:00', title: 'Invited Talk', speaker: 'Emrah Görgülü'},
         { time: '11:00', title: 'Break' },
         { time: '11:15-12:45', title: 'First Session', chair: 'TBA' },
         { time: '11:15', title: 'Islıksı bir dil olan Kuş Dili', speaker: 'Kenan Akten' },
@@ -44,7 +44,7 @@ export default {
   posters: [
     { title: 'Zero Morphemes in Turkish Relative Clauses', speaker: 'Süleyman Yaman', aff: 'Middle East Technical University' },
     { title: 'Referential strategies of personal pronouns in learner English', speaker: 'Yoshikatsu Hasegawa, Yujisuhu Shuhama', aff: 'Keiwa University' },
-    { title: 'kendi-DAT in Batman Turkish', speaker: 'Behiye İrem Tapan', aff: 'Marmara Üniversitesi' },
+    { title: 'kendi-DAT in Batman Turkish', speaker: 'Behiye İrem Tapan', aff: '' },
     { title: 'Manual Construction of Hypernym Relations in Turkish WordNet KeNet', speaker: 'Elif Sarmış, Özge Bakay, Bilge Nas Arıcan, Olcay Taner Yıldız', aff: 'Boğaziçi University, Starlang Software, Işık University' },
   ]
 }
