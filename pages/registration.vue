@@ -1,19 +1,25 @@
 <template>
   <div class="container">
     <div class="page">
-      <span class="form-loading" :class="formLoaded ? 'passive' : ''">
-        <h3 class="subtitle">
-          The form is loading. Please wait...
-        </h3>
-      </span>
-      <iframe class="form" id="registration-form" @load="frameload()"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeeSm-6DO70GmeLieHxLTGdI4zeSClw0AeeJM59PpdZJVN0YQ/viewform?embedded=true"
-        height="1280" frameborder="0" marginheight="0" marginwidth="0">
-      </iframe>
-      <!-- <iframe class="form" id="registration-form" @load="frameload()"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSf09EYcN_oQ0ForoDg7-gRTcfjAWTDO7Qo9xxD1mL33bBFiyw/viewform?embedded=true"
-        width="760" height="1048" frameborder="0" marginheight="0" marginwidth="0">
-      </iframe> -->
+      <template v-if="registration">
+        <span class="form-loading" :class="formLoaded ? 'passive' : ''">
+          <h3 class="subtitle">
+            The form is loading. Please wait...
+          </h3>
+        </span>
+        <iframe class="form" id="registration-form" @load="frameload()"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeeSm-6DO70GmeLieHxLTGdI4zeSClw0AeeJM59PpdZJVN0YQ/viewform?embedded=true"
+          height="1280" frameborder="0" marginheight="0" marginwidth="0">
+        </iframe>
+      </template>
+      <template v-else>
+        <br><br><br><br>
+        <h2>Registration for BUSCTEL is closed</h2>
+        <hr>
+        <h3>Please email <a href="mailto:busctel@boun.edu.tr">busctel@boun.edu.tr</a></h3>
+        <h4>or</h4>
+        <h3>contact us via <a href="https://twitter.com/bounlingcircle" target="_blank">twitter</a></h3>
+      </template>
       <hr class="footer">
     </div>
   </div>
@@ -24,7 +30,8 @@
     name: 'Registration',
     data() {
       return {
-        formLoaded: false
+        formLoaded: false,
+        registration: false
       }
     },
     methods: {
