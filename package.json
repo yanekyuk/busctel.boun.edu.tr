@@ -18,13 +18,14 @@
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.7",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.11.0",
     "particles.js": "^2.0.0",
+    "vue": "^2.6.11",
     "vue-particles": "^1.0.9",
     "vuebar": "0.0.20"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "push-dir": "^0.4.1",
     "sass-loader": "^8.0.0"
   }
