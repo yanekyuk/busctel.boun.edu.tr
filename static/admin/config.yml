@@ -31,8 +31,8 @@ collections:
         name: 'programs'
         widget: 'list'
         fields:
-          - { label: 'Date & Time', name: 'datetime', widget: 'datetime' },
-          - { label: 'Venue', name: 'venue', widget: 'string' },
-          - { label: 'Speaker', name: 'speaker', widget: 'string' },
-          - { label: 'Title', name: 'title', widget: 'string' },
+          - { label: 'Date & Time', name: 'datetime', widget: 'datetime' }
+          - { label: 'Venue', name: 'venue', widget: 'string' }
+          - { label: 'Speaker', name: 'speaker', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Chair', name: 'chair', widget: 'string' }
